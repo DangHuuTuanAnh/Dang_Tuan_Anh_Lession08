@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài 4</title>
+	
+</head>
+<body>
+	<script type="text/javascript">
+		var sm;
+		var m;
+		sm = prompt('Mời bạn nhập m:');
+		m = parseInt(sm);
+		var sn;
+		var n;
+		do{
+			sn = prompt('Mời bạn nhập n:');
+			n = parseInt(sn);
+		} while (m<n);
+		var sk;
+		var k;
+		sk = prompt('Mời bạn nhập k:');
+		k = parseInt(sk);
+		 var tong = 0;
+		// function tinh_tong(){
+			if (m > n) {
+				for (var i = n; i <= m; i++) {
+					if (i % k==0) {
+						tong +=i;
+					}
+				}
+			}
+		// }
+		document.writeln("Tổng các số trong khoảng từ "+ n + " đến "+ m +" là:" + tong);
+	</script>
+</body>
+</html>

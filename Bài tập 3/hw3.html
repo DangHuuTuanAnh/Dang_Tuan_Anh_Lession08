@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài 3</title>
+	
+</head>
+<body>
+	<script type="text/javascript">
+		var n;
+		var sn;
+		var tong = 0;
+		do{
+			sn = prompt('Mời bạn nhập n:');
+			n = parseInt(sn);
+		} while (n<=0);
+		for (var i = 1; i <= n; i++) {
+			tong += 1/i;
+		}
+		document.writeln('Tổng cần tính là:'+ tong);
+	</script>
+</body>
+</html>

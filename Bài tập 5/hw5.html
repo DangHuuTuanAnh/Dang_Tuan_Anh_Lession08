@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài 5</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var sn;
+		var n;
+		var giai_thua;
+		var tong=0;
+		do{
+			sn = prompt('Mời bạn nhập n;');
+			n = parseInt(sn);
+		} while (n<=0);
+		for (var i = 1; i <= n; i++) {
+			giai_thua = i * i;
+			tong += i/giai_thua;
+		}
+		document.writeln('Tổng cần tính là:' + tong);
+	</script>
+</body>
+</html>
